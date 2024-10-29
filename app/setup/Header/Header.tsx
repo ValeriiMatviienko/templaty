@@ -7,7 +7,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { XIcon, MenuIcon } from "lucide-react";
 import { ModeToggle } from "../ThemeButton";
@@ -15,6 +15,7 @@ import { navigationItems } from "./navItems";
 
 export const Header = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,9 +23,18 @@ export const Header = () => {
         setOpen(false);
       }
     };
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    };
+
     window.addEventListener("resize", handleResize);
+    document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
       window.removeEventListener("resize", handleResize);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -66,7 +76,10 @@ export const Header = () => {
           <ModeToggle />
         </div>
 
-        <div className="flex w-12 lg:hidden items-end justify-end">
+        <div
+          className="flex w-12 lg:hidden items-end justify-end"
+          ref={menuRef}
+        >
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
             {isOpen ? (
               <XIcon className="w-5 h-5 text-foreground dark:text-white" />

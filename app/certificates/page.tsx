@@ -47,7 +47,7 @@ const Certificates = () => {
       <div className="container mx-auto p-4">
         {/* Title and Description List */}
         <div className="mb-8">
-          <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular mb-4">
+          <h2 className="text-5xl md:text-7xl max-w-2xl tracking-tighter font-regular mb-4">
             Certificates
           </h2>
           <CertificateList certificates={certificates} />
