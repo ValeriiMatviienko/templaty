@@ -30,15 +30,16 @@ export const Header = () => {
 
   return (
     <header className="w-full z-40 fixed top-0 left-0 bg-background">
-      <div className="container relative p-4 mx-auto min-h-20 flex gap-4 flex-row items-center">
+      <div className="container relative p-4 mx-auto min-h-20 flex items-center justify-between">
         <Link href="/">
-          <span className="font-semibold p-4 text-foreground dark:text-white">
+          <span className="font-semibold text-foreground dark:text-white">
             LOGO
           </span>
         </Link>
-        <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
-          <NavigationMenu className="flex justify-start items-start">
-            <NavigationMenuList className="flex justify-start gap-4 flex-row">
+
+        <div className="hidden lg:flex flex-grow justify-center items-center gap-4">
+          <NavigationMenu>
+            <NavigationMenuList className="flex gap-4">
               {navigationItems.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   <NavigationMenuLink asChild>
@@ -57,14 +58,15 @@ export const Header = () => {
           </NavigationMenu>
         </div>
 
-        <div className="flex justify-end w-full gap-4">
+        <div className="flex items-center gap-4">
           <div className="border-r hidden md:inline"></div>
           <Button variant="outline" className="text-foreground dark:text-white">
             Sign in
           </Button>
           <ModeToggle />
         </div>
-        <div className="flex w-12 shrink lg:hidden items-end justify-end">
+
+        <div className="flex w-12 lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
             {isOpen ? (
               <XIcon className="w-5 h-5 text-foreground dark:text-white" />

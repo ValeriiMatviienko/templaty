@@ -12,7 +12,7 @@ const getGreeting = () => {
 };
 export const GreetingSection = () => (
   <div className="w-full">
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto px-8">
       <div className="flex gap-8 pt-40 pb-10 items-center justify-center flex-col">
         <div>
           <Badge variant="outline">{getGreeting()}</Badge>
@@ -28,9 +28,11 @@ export const GreetingSection = () => (
           </p>
         </div>
         <div className="flex flex-row gap-3">
-          <Button size="lg" className="gap-4" variant="outline">
-            Jump on a call <PhoneCall className="w-4 h-4" />
-          </Button>
+          <a href="tel:66666">
+            <Button size="lg" className="gap-4" variant="outline">
+              Jump on a call <PhoneCall className="w-4 h-4" />
+            </Button>
+          </a>
           <Button size="lg" className="gap-4">
             Sign up here <MoveRight className="w-4 h-4" />
           </Button>
