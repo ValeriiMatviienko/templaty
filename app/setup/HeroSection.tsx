@@ -11,7 +11,7 @@ export const HeroSection = () => {
     "https://images.pexels.com/photos/28973930/pexels-photo-28973930/free-photo-of-historic-saigon-central-post-office-architecture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
   return (
-    <div className="w-full pt-20">
+    <div className="w-full py-10">
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2">
           <div className="flex gap-4 flex-col">

@@ -30,7 +30,7 @@ export const Header = () => {
 
   return (
     <header className="w-full z-40 fixed top-0 left-0 bg-background">
-      <div className="container relative p-2 mx-auto min-h-20 flex gap-4 flex-row items-center">
+      <div className="container relative p-4 mx-auto min-h-20 flex gap-4 flex-row items-center">
         <Link href="/">
           <span className="font-semibold p-4 text-foreground dark:text-white">
             LOGO
