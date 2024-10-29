@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
 
@@ -29,6 +30,7 @@ export const HeroSection = () => {
           <div className="grid grid-cols-2 gap-8">
             <div className="bg-muted rounded-md aspect-square">
               <img
+                loading="lazy"
                 src={imageUrl}
                 alt="Image 1"
                 className="rounded-md w-full h-full object-cover cursor-pointer"

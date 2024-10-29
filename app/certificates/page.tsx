@@ -7,11 +7,18 @@ import {
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import CertificateList from "./CertificateList";
 
 const Certificates = () => {
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
   const [current, setCurrent] = useState<number>(0);
   const [count, setCount] = useState<number>(0);
+
+  const certificates = [
+    "Certified in Advanced Business Strategy",
+    "Professional Project Management Techniques",
+    "Modern Architectural Design Principles",
+  ];
 
   const images = [
     "https://images.pexels.com/photos/28973930/pexels-photo-28973930/free-photo-of-historic-saigon-central-post-office-architecture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -37,9 +44,17 @@ const Certificates = () => {
 
   return (
     <div className="w-full py-20 lg:py-40">
-      <div className="container mx-auto">
+      <div className="container mx-auto p-4">
+        {/* Title and Description List */}
+        <div className="mb-8">
+          <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular mb-4">
+            Certificates
+          </h2>
+          <CertificateList certificates={certificates} />
+        </div>
+
+        {/* Carousel for small screens */}
         <div className="block sm:hidden">
-          {/* Carousel for small screens */}
           <Carousel setApi={handleSetApi} className="w-full">
             <CarouselContent>
               {images.map((url, index) => (
@@ -69,6 +84,7 @@ const Certificates = () => {
               className="h-full rounded-md aspect-square p-6 flex justify-center items-center"
             >
               <img
+                loading="lazy"
                 src={url}
                 alt={`Certificate ${index + 1}`}
                 className="w-full h-full rounded-md object-cover cursor-pointer"
@@ -85,9 +101,10 @@ const Certificates = () => {
           onClick={() => setFullscreenImage(null)}
         >
           <img
+            loading="lazy"
             src={fullscreenImage}
             alt="Fullscreen Image"
-            className="max-w-full max-h-full"
+            className="max-w-full max-h-full rounded-md"
           />
         </div>
       )}
