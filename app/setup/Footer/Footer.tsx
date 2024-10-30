@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { navigationItems } from "./footerNavItems";
+import { useNavigationItems } from "./footerNavItems";
 
 export const Footer = () => {
+  const navigationItems = useNavigationItems();
+
   return (
     <div className="w-full py-20 lg:py-40 bg-foreground text-background">
       <div className="container mx-auto px-8">

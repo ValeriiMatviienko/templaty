@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 type NavigationSubItem = {
   title: string;
   href: string;
@@ -10,54 +12,34 @@ type NavigationItem = {
   items?: NavigationSubItem[];
 };
 
-export const navigationItems: NavigationItem[] = [
-  {
-    title: "Home",
-    href: "/",
-    description: "",
-  },
-  {
-    title: "Product",
-    description: "Managing a small business today is already tough.",
-    items: [
-      {
-        title: "Reports",
-        href: "/reports",
-      },
-      {
-        title: "Statistics",
-        href: "/statistics",
-      },
-      {
-        title: "Dashboards",
-        href: "/dashboards",
-      },
-      {
-        title: "Recordings",
-        href: "/recordings",
-      },
-    ],
-  },
-  {
-    title: "Company",
-    description: "Managing a small business today is already tough.",
-    items: [
-      {
-        title: "About us",
-        href: "/about",
-      },
-      {
-        title: "Fundraising",
-        href: "/fundraising",
-      },
-      {
-        title: "Investors",
-        href: "/investors",
-      },
-      {
-        title: "Contact us",
-        href: "/contact",
-      },
-    ],
-  },
-];
+export const useNavigationItems = (): NavigationItem[] => {
+  const t = useTranslations("Setup");
+
+  return [
+    {
+      title: t("footer_nav__home"),
+      href: "/",
+      description: "",
+    },
+    {
+      title: t("footer_nav__product"),
+      description: t("footer_nav__product_description"),
+      items: [
+        { title: t("footer_nav__reports"), href: "/reports" },
+        { title: t("footer_nav__statistics"), href: "/statistics" },
+        { title: t("footer_nav__dashboards"), href: "/dashboards" },
+        { title: t("footer_nav__recordings"), href: "/recordings" },
+      ],
+    },
+    {
+      title: t("footer_nav__company"),
+      description: t("footer_nav__company_description"),
+      items: [
+        { title: t("footer_nav__about"), href: "/about" },
+        { title: t("footer_nav__fundraising"), href: "/fundraising" },
+        { title: t("footer_nav__investors"), href: "/investors" },
+        { title: t("footer_nav__contact"), href: "/contact" },
+      ],
+    },
+  ];
+};

@@ -11,9 +11,10 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { XIcon, MenuIcon } from "lucide-react";
 import { ModeToggle } from "../ThemeButton";
-import { navigationItems } from "./navItems";
+import { useNavigationItems } from "./navItems";
 
 export const Header = () => {
+  const navigationItems = useNavigationItems();
   const [isOpen, setOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
 

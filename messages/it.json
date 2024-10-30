@@ -1,0 +1,25 @@
+{
+  "Setup": {
+    "nav_certificates": "certificates",
+    "nav_projects": "projects",
+    "nav_know": "know-how",
+    "nav_clients": "clients",
+    "nav_about": "about us",
+    "nav_contact": "contact",
+
+    "footer_nav__home": "Home",
+    "footer_nav__product": "Product",
+    "footer_nav__company": "Company",
+    "footer_nav__name": "Navigate",
+    "footer_nav__product_description": "Managing a small business today is already tough.",
+    "footer_nav__company_description": "Managing a small business today is already tough.",
+    "footer_nav__reports": "Reports",
+    "footer_nav__statistics": "Statistics",
+    "footer_nav__dashboards": "Dashboards",
+    "footer_nav__recordings": "Recordings",
+    "footer_nav__about": "About us",
+    "footer_nav__fundraising": "Fundraising",
+    "footer_nav__investors": "Investors",
+    "footer_nav__contact": "Contact us"
+  }
+}
