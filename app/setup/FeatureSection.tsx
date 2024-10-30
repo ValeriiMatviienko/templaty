@@ -1,9 +1,13 @@
+import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 
 export const FeatureSection = () => (
   <div className="w-full py-10">
     <div className="container mx-auto px-8">
       <div className="flex gap-4 py-10 flex-col items-start">
+        <div>
+          <Badge>!!!!!!</Badge>
+        </div>
         <div className="flex gap-2 flex-col">
           <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular">
             Something new!
