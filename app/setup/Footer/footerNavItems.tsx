@@ -17,11 +17,6 @@ export const useNavigationItems = (): NavigationItem[] => {
 
   return [
     {
-      title: t("footer_nav__home"),
-      href: "/",
-      description: "",
-    },
-    {
       title: t("footer_nav__product"),
       description: t("footer_nav__product_description"),
       items: [

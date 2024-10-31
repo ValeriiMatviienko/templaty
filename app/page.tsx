@@ -1,4 +1,3 @@
-import { FeatureSection } from "./setup/FeatureSection";
 import { GreetingSection } from "./setup/GreetingSection";
 import { HeroSection } from "./setup/HeroSection";
 import { KnowHowSection } from "./setup/KnowHowSection";
@@ -11,7 +10,6 @@ export default function Home() {
       <WelcomeSection />
       <KnowHowSection />
       <HeroSection />
-      <FeatureSection />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { MoveRight, PhoneCall } from "lucide-react";
+import { Mail, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 // import { useTranslations } from "next-intl";
@@ -33,12 +33,12 @@ export const GreetingSection = () => {
           </div>
           <div className="flex flex-row gap-3">
             <a href="tel:66666">
-              <Button size="lg" className="gap-4" variant="outline">
-                Jump on a call <PhoneCall className="w-4 h-4" />
+              <Button size="lg" className="gap-4 uppercase" variant="outline">
+                call us <PhoneCall className="w-4 h-4" />
               </Button>
             </a>
-            <Button size="lg" className="gap-4">
-              Sign up here <MoveRight className="w-4 h-4" />
+            <Button size="lg" className="gap-4 uppercase buttonColor">
+              Send mail <Mail className="w-4 h-4" />
             </Button>
           </div>
         </div>

@@ -16,6 +16,11 @@ html {
   }
 }
 
+.buttonColor {
+  background-color: #2369a1;
+  color: aliceblue;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
