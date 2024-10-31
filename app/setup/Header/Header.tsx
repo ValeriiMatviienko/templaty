@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -41,11 +42,9 @@ export const Header = () => {
 
   return (
     <header className="w-full z-40 fixed top-0 left-0 bg-background">
-      <div className="container relative p-4 mx-auto min-h-20 flex items-center justify-between">
+      <div className="container relative px-5 pt-5 mx-auto min-h-20 flex items-center justify-between">
         <Link href="/">
-          <span className="font-semibold text-foreground dark:text-white">
-            LOGO
-          </span>
+          <img src="/logo.svg" alt="Company logo" width={170} height={150} />
         </Link>
 
         <div className="hidden lg:flex flex-grow justify-center items-center gap-4">
@@ -72,7 +71,7 @@ export const Header = () => {
         <div className="flex items-center gap-4">
           <div className="border-r hidden md:inline"></div>
           <Button variant="outline" className="text-foreground dark:text-white">
-            Sign in
+            EN
           </Button>
           <ModeToggle />
         </div>
@@ -89,7 +88,7 @@ export const Header = () => {
             )}
           </Button>
           {isOpen && (
-            <div className="absolute top-20 border-t flex flex-col w-full right-0 bg-background shadow-lg py-4 container gap-8">
+            <div className="absolute top-24 border-t flex flex-col w-full right-0 bg-background shadow-lg py-4 container gap-8">
               {navigationItems.map((item) => (
                 <div key={item.title} className="flex flex-col px-4 gap-1">
                   <Link

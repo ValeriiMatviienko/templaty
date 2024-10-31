@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { useNavigationItems } from "./footerNavItems";
 
@@ -10,9 +11,16 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="flex gap-8 flex-col items-start">
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-                LOGO
-              </h2>
+              <div className="tracking-tighter max-w-xl">
+                <Link href="/">
+                  <img
+                    src="/logo.svg"
+                    alt="Company logo"
+                    width={170}
+                    height={150}
+                  />
+                </Link>
+              </div>
               <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
                 Managing a small business today is already tough.
               </p>

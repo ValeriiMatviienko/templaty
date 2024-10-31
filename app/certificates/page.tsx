@@ -15,20 +15,33 @@ const Certificates = () => {
   const [count, setCount] = useState<number>(0);
 
   const certificates = [
-    "Certified in Advanced Business Strategy",
-    "Professional Project Management Techniques",
-    "Modern Architectural Design Principles",
+    "Certificato ISO 21500 Attestato FER",
+    "Certificato ISO 37001",
+    "Certificato ISO 50001",
+    "Certificato ISO 21502",
+    "Certificato ISO 14.000 Certificato ISO SA 8000 Certificato ISO 45001",
+    "Cat. OG 1 titolo V euro 5.165.000,00 Cat. OG 10 titolo V euro 5.165.000,00 Cat. OG 11 titolo V euro 5.165.000,00",
+    "Certificato ISO 9001 gia’ trasformato in Vision 2000 n. 1157 Certificato EQUNET 9110",
+    "Antincendio rischio medio",
+    "Primo Soccorso",
+    "Lavori in quota",
+    "Montaggio, Smontaggio, Trasformazione ponteggi",
+    "PES PAV",
+    "Covid Manager",
+    "Patentino FGAS",
   ];
 
   const images = [
-    "https://images.pexels.com/photos/28973930/pexels-photo-28973930/free-photo-of-historic-saigon-central-post-office-architecture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/28704263/pexels-photo-28704263/free-photo-of-outdoor-book-market-at-saint-sulpice-paris.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    "https://images.pexels.com/photos/28960478/pexels-photo-28960478/free-photo-of-scenic-lighthouse-on-rocky-coastal-path.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    "https://images.pexels.com/photos/18164715/pexels-photo-18164715/free-photo-of-person-walking-a-dog-on-a-promenade.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    "https://images.pexels.com/photos/16630942/pexels-photo-16630942/free-photo-of-close-up-of-plant-with-green-leaves.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    "https://images.pexels.com/photos/28881039/pexels-photo-28881039/free-photo-of-modern-wave-like-architectural-facade.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    "https://images.pexels.com/photos/28881039/pexels-photo-28881039/free-photo-of-modern-wave-like-architectural-facade.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    "https://images.pexels.com/photos/28881039/pexels-photo-28881039/free-photo-of-modern-wave-like-architectural-facade.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    "/certs/cert4.webp",
+    "/certs/cert3.webp",
+    "/certs/cert5.webp",
+    "/certs/cert1.webp",
+    "/certs/cert2.webp",
+    "/certs/cert6.webp",
+    "/certs/cert7.webp",
+    "/certs/cert8.webp",
+    "/certs/cert9.webp",
+    "/certs/cert10.webp",
   ];
 
   const openImage = (url: string) => {
@@ -43,14 +56,13 @@ const Certificates = () => {
   };
 
   return (
-    <div className="w-full py-20 lg:py-40">
+    <div className="w-full py-24 lg:py-40">
       <div className="container mx-auto p-4">
         {/* Title and Description List */}
         <div className="mb-8">
           <h2 className="text-5xl md:text-7xl max-w-2xl tracking-tighter font-regular mb-4">
             Certificates
           </h2>
-          <CertificateList certificates={certificates} />
         </div>
 
         {/* Carousel for small screens */}
@@ -62,6 +74,7 @@ const Certificates = () => {
                   <div className="h-full rounded-md aspect-square p-6 flex justify-center items-center">
                     <img
                       src={url}
+                      loading="lazy"
                       alt={`Certificate ${index + 1}`}
                       className="w-full h-full rounded-md object-cover cursor-pointer"
                       onClick={() => openImage(url)}
@@ -93,11 +106,12 @@ const Certificates = () => {
             </div>
           ))}
         </div>
+        <CertificateList certificates={certificates} />
       </div>
 
       {fullscreenImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center"
+          className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center"
           onClick={() => setFullscreenImage(null)}
         >
           <img

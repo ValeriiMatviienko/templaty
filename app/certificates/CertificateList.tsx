@@ -7,10 +7,15 @@ interface CertificateListProps {
 
 const CertificateList: React.FC<CertificateListProps> = ({ certificates }) => {
   return (
-    <ul className="text-lg space-y-3">
+    <ul className="text-lg mt-3 space-y-3">
       {certificates.map((certificate, index) => (
-        <li key={index} className="flex items-center gap-2">
-          <ShieldCheck className="w-5 h-5 text-primary" /> {certificate}
+        <li key={index} className="flex items-center space-x-2">
+          <div>
+            <ShieldCheck className="w-5 h-5" />
+          </div>
+          <div>
+            <span>{certificate}</span>
+          </div>
         </li>
       ))}
     </ul>
