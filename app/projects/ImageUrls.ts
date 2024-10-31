@@ -1,0 +1,18 @@
+export const ImageUrls: string[] = [
+  "https://images.pexels.com/photos/28973930/pexels-photo-28973930/free-photo-of-historic-saigon-central-post-office-architecture.jpeg",
+  "https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg",
+  "https://images.pexels.com/photos/208825/pexels-photo-208825.jpeg",
+  "https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg",
+  "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg",
+  "https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg",
+  "https://images.pexels.com/photos/217947/pexels-photo-217947.jpeg",
+  "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg",
+  "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg",
+  "https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg",
+  "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg",
+  "https://images.pexels.com/photos/3573382/pexels-photo-3573382.jpeg",
+  "https://images.pexels.com/photos/4012369/pexels-photo-4012369.jpeg",
+  "https://images.pexels.com/photos/4171739/pexels-photo-4171739.jpeg",
+  "https://images.pexels.com/photos/459202/pexels-photo-459202.jpeg",
+  "https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg",
+];

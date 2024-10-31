@@ -4,8 +4,10 @@
     "nav_projects": "projects",
     "nav_know": "know-how",
     "nav_clients": "clients",
-    "nav_about": "about us",
+    "nav_about": "Chi siamo",
     "nav_contact": "contact",
+    "nav_reference": "LE NOSTRE REFERENZE",
+    "nav_customer": "PRINCIPALI CLIENTI",
 
     "footer_nav__product": "Product",
     "footer_nav__company": "Company",
@@ -19,6 +21,28 @@
     "footer_nav__about": "About us",
     "footer_nav__fundraising": "Fundraising",
     "footer_nav__investors": "Investors",
-    "footer_nav__contact": "Contact us"
+    "footer_nav__contact": "Contact us",
+
+    "about_badge": "Chi siamo",
+    "about_title": "Gli obiettivi futuri dell'azienda includono:",
+    "about_subtitle": "Grazie all'acquisizione da parte di Tre Elle Group la E&T ENGINEERING & TECNHOLOGY ha in programma di espandere le proprie operazioni non solo a livello nazionale ma anche internazionale.",
+    "about_goals_title1": "Espansione Nazionale ed Internazionale",
+    "about_goals_description1": "Sfruttare le sinergie create dall'acquisizione per entrare in nuovi mercati e aumentare la propria presenza globale, offrendo soluzioni innovative nei settori degli impianti idraulici, termici, di condizionamento e elettrici.",
+    "about_goals_title2": "Innovazione Tecnologica",
+    "about_goals_description2": "Investire in ricerca e sviluppo per migliorare continuamente la qualità dei prodotti e dei servizi offerti, integrando tecnologie avanzate e sostenibili nelle proprie soluzioni.",
+    "about_goals_title3": "Formazione e Sviluppo del Personale",
+    "about_goals_description3": "Potenziare le competenze del team attraverso programmi di formazione specializzati, garantendo che il personale sia sempre aggiornato sulle ultime tecnologie e prassi del settore.",
+    "about_goals_title4": "Sostenibilità",
+    "about_goals_description4": "Impegnarsi a ridurre l'impatto ambientale delle proprie operazioni, adottando pratiche sostenibili e promuovendo l'uso di tecnologie verdi nei progetti realizzati.",
+    "about_goals_title5": "Esperienza del Cliente",
+    "about_goals_description5": "Migliorare l'esperienza del cliente attraverso un servizio più efficiente e personalizzato, ascoltando attivamente le esigenze dei clienti e adattando le soluzioni di conseguenza.",
+    "about_goals_title6": "Collaborazioni Strategiche",
+    "about_goals_description6": "Stabilire partnership con altre aziende e fornitori per ampliare l'offerta di servizi e prodotti, creando un ecosistema di soluzioni integrate per i clienti.",
+    "about_conclusion": "Attraverso questi obiettivi, E&T ENGINEERING & TECNHOLOGY mira a consolidare la propria posizione nel mercato e a diventare un leader riconosciuto a livello nazionale ed internazionale nel settore degli impianti civili e industriali.",
+
+    "our_team_title": "Il nostro Team",
+    "our_teamp1": "Il team di E&T Engineering Technology è composto da ingegneri altamente specializzati e tecnici esperti, con una solida formazione nell'ambito dell'impiantistica elettrica, idraulica, impianti tecnologici di condizionamento e gestione di impianti di alta, media e bassa tensione. La professionalità e l'esperienza dei membri del team rappresentano un valore fondamentale per l'azienda, consentendo di affrontare con competenza le sfide del settore e di fornire soluzioni di alta qualità.",
+    "our_teamp2": "A seguito dell'acquisizione da parte di Tre Elle Group, E&T Engineering Technology prevede un potenziamento del proprio team. Questo processo di crescita permetterà di integrare nuove risorse e di ampliare le competenze disponibili. La sinergia con il team di Tre Elle Group, anch'esso composto da professionisti esperti, offrirà l'opportunità di collaborare su progetti più complessi e innovativi.",
+    "our_teamp3": "L'unione delle competenze dei due team favorirà lo sviluppo di soluzioni integrate e avanzate, in grado di soddisfare le esigenze di un mercato in continua evoluzione. Questa collaborazione mira a rafforzare ulteriormente la posizione di E&T Engineering Technology nel settore, garantendo un servizio di eccellenza e un’attenzione costante alle aspettative dei clienti."
   }
 }

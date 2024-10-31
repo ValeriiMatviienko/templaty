@@ -6,6 +6,8 @@
     "nav_clients": "clients",
     "nav_about": "about us",
     "nav_contact": "contact",
+    "nav_reference": "OUR REFERENCES",
+    "nav_customer": "MAIN CUSTOMERS",
 
     "footer_nav__product": "Product",
     "footer_nav__company": "Company",
@@ -19,6 +21,28 @@
     "footer_nav__about": "About us",
     "footer_nav__fundraising": "Fundraising",
     "footer_nav__investors": "Investors",
-    "footer_nav__contact": "Contact us"
+    "footer_nav__contact": "Contact us",
+
+    "about_badge": "ABOUT US",
+    "about_title": "The company’s future goals include:",
+    "about_subtitle": "Thanks to its acquisition by Tre Elle Group, E&T ENGINEERING & TECHNOLOGY plans to expand its operations nationally and internationally.",
+    "about_goals_title1": "National and International Expansion",
+    "about_goals_description1": "Leverage synergies created from the acquisition to enter new markets and increase global presence, offering innovative solutions in hydraulic, thermal, air conditioning, and electrical systems.",
+    "about_goals_title2": "Technological Innovation",
+    "about_goals_description2": "Invest in research and development to continuously improve the quality of products and services, integrating advanced and sustainable technologies into solutions.",
+    "about_goals_title3": "Staff Training and Development",
+    "about_goals_description3": "Enhance team skills through specialized training programs, ensuring the team is always up-to-date with the latest technologies and industry practices.",
+    "about_goals_title4": "Sustainability",
+    "about_goals_description4": "Commit to reducing the environmental impact of operations, adopting sustainable practices, and promoting green technologies in project execution.",
+    "about_goals_title5": "Customer Experience",
+    "about_goals_description5": "Improve customer experience through more efficient and personalized service, actively listening to customer needs and tailoring solutions accordingly.",
+    "about_goals_title6": "Strategic Partnerships",
+    "about_goals_description6": "Establish partnerships with other companies and suppliers to expand the service and product offering, creating an ecosystem of integrated solutions for customers.",
+    "about_conclusion": "Through these goals, E&T ENGINEERING & TECHNOLOGY aims to strengthen its market position and become a recognized leader nationally and internationally in the civil and industrial systems sector.",
+
+    "our_team_title": "Our Team",
+    "our_teamp1": "The E&T Engineering Technology team is composed of highly specialized engineers and expert technicians with solid training in electrical, hydraulic, technological air conditioning systems, and management of high, medium, and low voltage systems. The professionalism and experience of the team members represent a fundamental value for the company, allowing it to competently address industry challenges and provide high-quality solutions.",
+    "our_teamp2": "Following the acquisition by Tre Elle Group, E&T Engineering Technology foresees strengthening its team. This growth process will allow the integration of new resources and the expansion of available skills. Synergy with the Tre Elle Group team, also made up of experienced professionals, will provide opportunities to collaborate on more complex and innovative projects.",
+    "our_teamp3": "The combination of the expertise of both teams will foster the development of integrated and advanced solutions capable of meeting the demands of an ever-evolving market. This collaboration aims to further strengthen E&T Engineering Technology's position in the sector, ensuring excellent service and constant attention to customer expectations."
   }
 }
